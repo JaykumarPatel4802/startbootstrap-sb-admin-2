@@ -1,4 +1,4 @@
-# [Git basic information:]
+# Git basic information:
 To retrieve a change:
 git pull
 
