@@ -7,6 +7,10 @@ To push a change:
 - git status (everythin should be green not red)
 - git commit -m "Any message goes here"
 - git push origin design-simulation (git push origin master <-- don't do this)
+- Copy link and paste it in a new tab
+- Change the base directory to JaykumarPatel4802 and wait a second for the page to refresh (do not manually refresh)
+- Create the pull request
+
 
 # [Start Bootstrap - SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/)
 
