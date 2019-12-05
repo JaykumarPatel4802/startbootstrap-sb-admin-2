@@ -1,6 +1,9 @@
 # Git basic information:
 To retrieve a change:
-- git pull
+- git pull (if you do not have changes to commit)
+- git rebase master (if you do have changes to commit, this will pull and push your changes at the same time)
+  - git push origin Design-Simulation
+  - Copy the link to create a PR and open a new tab. Follow the steps for creating a PR
 
 To push a change:
 - git add .
