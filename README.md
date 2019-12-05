@@ -6,7 +6,7 @@ To push a change:
 - git add .
 - git status (everythin should be green not red)
 - git commit -m "Any message goes here"
-- git push origin master
+- git push origin design-simulation (git push origin master <-- don't do this)
 
 # [Start Bootstrap - SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/)
 
