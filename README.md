@@ -1,12 +1,12 @@
 # Git basic information:
 To retrieve a change:
-git pull
+- git pull
 
 To push a change:
-git add .
-git status (everythin should be green not red)
-git commit -m "Any message goes here"
-git push origin master
+- git add .
+- git status (everythin should be green not red)
+- git commit -m "Any message goes here"
+- git push origin master
 
 # [Start Bootstrap - SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/)
 
