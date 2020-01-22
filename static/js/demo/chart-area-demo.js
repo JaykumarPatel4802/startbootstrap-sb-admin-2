@@ -1,3 +1,43 @@
+const mysql = require('mysql');
+
+// First you need to create a connection to the database
+// Be sure to replace 'user' and 'password' with the correct values
+const con = mysql.createConnection({
+  host: 'JaykumarPatel4802.mysql.pythonanywhere-services.com',
+  user: 'JaykumarPatel480',
+  password: 'MySQLDataBase',
+  database: 'JaykumarPatel480$Simulation'
+});
+
+con.connect((err) => {
+  if(err){
+    console.log('Error connecting to Db');
+    return;
+  }
+  console.log('Connection established');
+});
+
+con.query('SELECT numStudents FROM simulation_data', (err,num_stu) => {
+  if(err) throw err;
+
+  console.log('Number of Students Data received from Db:');
+  console.log(num_stu);
+});
+
+con.query('SELECT avgTime FROM simulation_data', (err,avg_time) => {
+  if(err) throw err;
+
+  console.log('Average Time Data received from Db:');
+  console.log(avg_time);
+});
+
+con.end((err) => {
+  // The connection is terminated gracefully
+  // Ensures all remaining queries are executed
+  // Then sends a quit packet to the MySQL server.
+});
+
+
 // Set new default font family and font color to mimic Bootstrap's default styling
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
