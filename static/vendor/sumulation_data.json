@@ -1,0 +1,12 @@
+{
+    "numStudents": 5,
+    "avgTime": 5,
+    "maxTime": 6,
+    "minTime": 4,
+    "avgDistance": 10,
+    "maxDistance": 11,
+    "minDistance": 9,
+    "avgSpeed": 2,
+    "maxSpeed": 3,
+    "minSpeed": 1
+}
