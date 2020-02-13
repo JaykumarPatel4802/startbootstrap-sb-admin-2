@@ -48,7 +48,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="{{ url_for('dashboard') }}">
+        <a class="nav-link">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -105,14 +105,14 @@
               </div>
             </div>
 
-            <!-- Number of Students -->
+            <!-- Number of Students Per Room-->
             <div class="col-xl-4 col-md-6 mb-4">
               <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Number of Students</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[0]}}</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Number of Students Per Room</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[1]}}</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-2x text-gray-300"></i>
@@ -122,14 +122,14 @@
               </div>
             </div>
 
-            <!-- Number of Students -->
+            <!-- Number of Rooms -->
             <div class="col-xl-4 col-md-6 mb-4">
               <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Number of Students</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[0]}}</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Number of Rooms</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[2]}}</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-2x text-gray-300"></i>
@@ -152,7 +152,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Average Travel Time</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[1]}}</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[3]}}</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-2x text-gray-300"></i>
@@ -169,7 +169,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Maximum Travel Time</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[2]}}</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[4]}}</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-2x text-gray-300"></i>
@@ -186,7 +186,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Minimum Travel Time</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[3]}}</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[5]}}</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-2x text-gray-300"></i>
@@ -198,120 +198,6 @@
           </div>
 
           <!-- End of 2nd Content Row -->
-
-          <!-- 3rd Content Row -->
-          <div class="row">
-
-            <!-- Average Travel Distance -->
-            <div class="col-xl-4 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Average Travel Distance</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[4]}}</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Maximum Travel Distance -->
-            <div class="col-xl-4 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Maximum Travel Distance</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[5]}}</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Minimum Travel Distance -->
-            <div class="col-xl-4 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Minimum Travel Distance</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[6]}}</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- End of 3rd Content Row -->
-
-          <!-- 4th Content Row -->
-          <div class="row">
-
-            <!-- Average Travel Speed -->
-            <div class="col-xl-4 col-md-6 mb-4">
-              <div class="card border-left-danger shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Average Travel Speed</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[7]}}</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Maximum Travel Speed -->
-            <div class="col-xl-4 col-md-6 mb-4">
-              <div class="card border-left-danger shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Maximum Travel Speed</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[8]}}</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Minimum Travel Speed -->
-            <div class="col-xl-4 col-md-6 mb-4">
-              <div class="card border-left-danger shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Minimum Travel Speed</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{last_data[9]}}</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- End of 4th Content Row -->
 
           <div class="row">
 
@@ -398,9 +284,8 @@
     var data = [];
       {% for row in full_data %}
       labels.push({{row[0]}});
-      data.push({{row[1]}});
+      data.push({{row[3]}});
       {% endfor %}
-    //   var data = [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000];
   </script>
 
   <!-- Page level custom scripts -->
